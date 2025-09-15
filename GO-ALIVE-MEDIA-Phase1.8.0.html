@@ -808,6 +808,17 @@
       return '<div style="margin:2px 0">'+name+': <b>'+range+'</b> <span class="muted">('+count+')</span>'+sched+'</div>';
     }).join('');
   }
+  function allocatedCount(v){
+  if(!v.allocations || v.allocations.length===0) return 0;
+  var c = 0;
+  v.allocations.forEach(function(a){
+    c += (a.toSeq - a.fromSeq + 1);
+  });
+  return c;
+}
+function usedCount(v){
+  return Array.isArray(v.assignedSeqs) ? v.assignedSeqs.length : 0;
+}
   function renderVouchers(){
     var tb=$('voucherList'); var arr=getVouchers().slice().reverse(); tb.innerHTML='';
     if(arr.length===0){ tb.innerHTML='<tr><td class="muted" colspan="8">No vouchers yet. Create a batch at left.</td></tr>'; return; }
