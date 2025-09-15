@@ -135,12 +135,50 @@
         <section id="panel-admin" class="panel">
           <div class="head">Admin Dashboard & Analytics</div>
           <div class="body">
-            <div class="rowgrid rowgrid-4">
-              <div class="card stat"><div><div class="muted">Total Shows</div><div class="num" id="adStatShows">—</div></div><span class="pill">📺 Shows</span></div>
-              <div class="card stat"><div><div class="muted">Active Vouchers</div><div class="num" id="adStatActiveVouchers">—</div></div><span class="pill">🎟️ Vouchers</span></div>
-              <div class="card stat"><div><div class="muted">Winners Declared</div><div class="num" id="adStatWinners">—</div></div><span class="pill">🏆 Winners</span></div>
-              <div class="card stat"><div><div class="muted">Pending Collections</div><div class="num" id="adStatPending">—</div></div><span class="pill">📦 Collections</span></div>
-            </div>
+
+              <div class="rowgrid rowgrid-4">
+  <div class="card stat">
+    <div style="display:flex;gap:12px;align-items:center">
+      <div class="icon">📻</div>
+      <div>
+        <div class="muted">Total Shows</div>
+        <div class="num" id="adStatShows">—</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card stat">
+    <div style="display:flex;gap:12px;align-items:center">
+      <div class="icon">🎟️</div>
+      <div>
+        <div class="muted">Active Vouchers</div>
+        <div class="num" id="adStatActiveVouchers">—</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card stat">
+    <div style="display:flex;gap:12px;align-items:center">
+      <div class="icon">🏆</div>
+      <div>
+        <div class="muted">Winners Declared</div>
+        <div class="num" id="adStatWinners">—</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card stat">
+    <div style="display:flex;gap:12px;align-items:center">
+      <div class="icon">⏳</div>
+      <div style="flex:1">
+        <div class="muted">Pending Collections</div>
+        <div class="num" id="adStatPending">—</div>
+        <div class="progress" style="margin-top:8px"><span id="barPending"></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
             <div class="rowgrid rowgrid-2" style="margin-top:12px">
               <div class="card">
