@@ -1343,5 +1343,25 @@ function usedCount(v){
   showPanel('panel-admin');
 })();
 </script>
+    <!-- any of your other scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/dayjs@1/dayjs.min.js"></script>
+
+    <!-- Supabase Client -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Winner Management logic -->
+    <script>
+      // ⬅️ Replace these placeholders with your actual values
+      const SUPABASE_URL = "https://qcqsnrnpeflmykvvbyix.supabase.co";
+      const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFjcXNucm5wZWZsbXlrdnZieWl4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc5Njg4MDYsImV4cCI6MjA3MzU0NDgwNn0.PazU9GosTLvAzpJ3AFctkn8oLZ5-xNR82bgYNSFwxeY";
+
+      const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+      // ... (rest of the long script I gave you)
+    </script>
+  </body>
+</html>
+ 
 </body>
 </html>
