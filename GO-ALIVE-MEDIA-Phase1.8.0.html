@@ -59,6 +59,27 @@
   .stat .num{ font-weight:900; font-size:22px; }
   .pill{ display:inline-flex; align-items:center; gap:6px; padding:5px 10px; border-radius:999px; background:#eef2ff; color:#3730a3; border:1px solid #c7d2fe; font-size:12px; }
   .link{ color:var(--brand); text-decoration:none; }
+/* === Phase 1.9.0 additions === */
+.alloc-line { margin: 2px 0; }
+.icon{
+  width:36px;height:36px;border-radius:10px;
+  display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--brand),var(--aqua));
+  color:#fff;font-weight:900;
+}
+.progress{
+  height:6px;
+  background:#eef2ff;
+  border-radius:999px;
+  overflow:hidden;
+}
+.progress > span{
+  display:block;
+  height:100%;
+  background:linear-gradient(90deg,var(--brand),var(--flare));
+  width:0;
+}
+ 
 </style>
 </head>
 <body>
